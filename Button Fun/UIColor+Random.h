@@ -1,5 +1,5 @@
 //
-//  JCAppDelegate.h
+//  UIColor+UIColor_Random.h
 //  Button Fun
 //
 //  Created by Costello, Jonathan on 4/1/13.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface UIColor (Random)
 
-@property (nonatomic, retain) UIWindow * window;
++ (UIColor *)randomColor;
 
 @end

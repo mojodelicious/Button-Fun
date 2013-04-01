@@ -7,21 +7,28 @@
 //
 
 #import "JCAppDelegate.h"
+#import "JCButtonViewController.h"
 
 @implementation JCAppDelegate
 
 - (void)dealloc
 {
-    [_window release];
+    self.window = nil;
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [application setStatusBarHidden:YES];
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    JCButtonViewController * vc = [[[JCButtonViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+    [[self window] setRootViewController:vc];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

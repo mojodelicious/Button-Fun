@@ -1,5 +1,5 @@
 //
-//  JCAppDelegate.h
+//  JCButtonView.h
 //  Button Fun
 //
 //  Created by Costello, Jonathan on 4/1/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JCAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (nonatomic, retain) UIWindow * window;
+@interface JCButtonView : UIView
 
 @end

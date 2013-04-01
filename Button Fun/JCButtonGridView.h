@@ -1,5 +1,5 @@
 //
-//  JCAppDelegate.h
+//  JCButtonGridView.h
 //  Button Fun
 //
 //  Created by Costello, Jonathan on 4/1/13.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JCButtonGridView : UIView
 
-@property (nonatomic, retain) UIWindow * window;
+@property (nonatomic, assign) CGFloat buttonWidth;
 
 @end
