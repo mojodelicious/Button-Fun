@@ -11,5 +11,9 @@
 @interface JCButtonGridView : UIView
 
 @property (nonatomic, assign) CGFloat buttonWidth;
+@property (nonatomic, retain) NSArray * allButtons;
+
+// Changes every button to a new random color
+- (void)changeAllButtonColorsAnimated:(BOOL)animated;
 
 @end

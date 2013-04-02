@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JCButtonViewController.h"
 
 @interface JCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, retain) UIWindow * window;
+@property (nonatomic, retain) JCButtonViewController * viewController;
 
 @end

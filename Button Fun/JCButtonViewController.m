@@ -7,7 +7,6 @@
 //
 
 #import "JCButtonViewController.h"
-#import "JCButtonGridView.h"
 
 @implementation JCButtonViewController
 
@@ -27,7 +26,9 @@
     
     CGRect frame = [[UIScreen mainScreen] bounds];
     
-    self.view = [[[JCButtonGridView alloc] initWithFrame:frame] autorelease];
+    self.gridView = [[[JCButtonGridView alloc] initWithFrame:frame] autorelease];
+    
+    self.view = self.gridView;
 }
 
 - (BOOL)shouldAutorotate {
@@ -39,6 +40,10 @@
     [super viewDidLoad];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self becomeFirstResponder];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -46,7 +51,23 @@
 
 - (void)dealloc {
     
+    self.gridView = nil;
     [super dealloc];
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+#pragma mark - motion handler
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        //change every block color
+        [self.gridView changeAllButtonColorsAnimated:YES];
+    }
 }
 
 @end

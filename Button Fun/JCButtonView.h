@@ -10,4 +10,8 @@
 
 @interface JCButtonView : UIView
 
+// changes the background color of the view to a new
+// random color
+- (void)switchRandomBackgroundColor;
+
 @end

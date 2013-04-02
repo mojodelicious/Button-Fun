@@ -22,7 +22,7 @@
         [tapRecognizer addTarget:self action:@selector(didTap:)];
         [self addGestureRecognizer:tapRecognizer];
         
-        self.backgroundColor = [UIColor randomColor];
+        [self switchRandomBackgroundColor];
     }
     
     return self;
@@ -32,12 +32,17 @@
     
     if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
         
-        //create a random color
-        UIColor * newColor = [UIColor randomColor];
-        
-        //chage the background color
-        self.backgroundColor = newColor;
+        [self switchRandomBackgroundColor];
     }
+}
+
+- (void)switchRandomBackgroundColor {
+    
+    //create a random color
+    UIColor * newColor = [UIColor randomColor];
+    
+    //chage the background color
+    self.backgroundColor = newColor;
 }
 
 @end

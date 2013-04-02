@@ -7,13 +7,13 @@
 //
 
 #import "JCAppDelegate.h"
-#import "JCButtonViewController.h"
 
 @implementation JCAppDelegate
 
 - (void)dealloc
 {
     self.window = nil;
+    self.viewController = nil;
     [super dealloc];
 }
 
@@ -24,8 +24,8 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    JCButtonViewController * vc = [[[JCButtonViewController alloc] initWithNibName:nil bundle:nil] autorelease];
-    [[self window] setRootViewController:vc];
+   self.viewController = [[[JCButtonViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+    [[self window] setRootViewController:self.viewController];
     
     [self.window makeKeyAndVisible];
     

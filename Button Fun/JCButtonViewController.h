@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JCButtonGridView.h"
 
 @interface JCButtonViewController : UIViewController
+
+@property (nonatomic, retain) JCButtonGridView * gridView;
 
 @end

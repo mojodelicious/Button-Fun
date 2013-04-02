@@ -24,8 +24,21 @@
     return self;
 }
 
-- (void)layoutSubviews {
+- (void)dealloc {
+    
+    self.allButtons = nil;
+    
+    [super dealloc];
+}
 
+- (void)layoutSubviews {
+    
+    for (JCButtonView * button in self.allButtons) {
+        [button removeFromSuperview];
+    }
+    
+    NSMutableArray * buttons = [NSMutableArray array];
+    
     // If the width and height cannot be evenly divisble by 40
     // We add one extra row and column
     NSUInteger columns = ceilf(self.frame.size.width / self.buttonWidth);
@@ -39,6 +52,7 @@
         for (int j = 0; j < columns; j++) {
             
             JCButtonView * view = [[[JCButtonView alloc] initWithFrame:CGRectMake(x, y, self.buttonWidth, self.buttonWidth)] autorelease];
+            [buttons addObject:view];
             [self addSubview:view];
             
             x += self.buttonWidth;
@@ -46,6 +60,27 @@
         
         x = 0.0f;
         y += self.buttonWidth;
+    }
+    
+    self.allButtons = [NSArray arrayWithArray:buttons];
+}
+
+- (void)changeAllButtonColorsAnimated:(BOOL)animated {
+    
+    void (^switchColors)(void) = ^{
+        
+        for (JCButtonView * button in self.allButtons) {
+            [button switchRandomBackgroundColor];
+        }
+    };
+    
+    if (animated) {
+        
+        [UIView animateWithDuration:5 animations:switchColors];
+        
+    } else {
+     
+        switchColors();
     }
 }
 

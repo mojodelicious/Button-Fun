@@ -10,6 +10,7 @@
 
 @interface UIColor (Random)
 
+// Creates and returns a random color
 + (UIColor *)randomColor;
 
 @end

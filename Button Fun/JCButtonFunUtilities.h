@@ -10,6 +10,7 @@
 
 @interface JCButtonFunUtilities : NSObject
 
+// Create and return a random float between 0 and 1
 + (float)randomFloatBetweenZeroAndOne;
 
 @end
