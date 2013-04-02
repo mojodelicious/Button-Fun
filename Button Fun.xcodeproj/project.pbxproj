@@ -21,6 +21,8 @@
 		5310EE30170A3086007B8568 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310EE2F170A3086007B8568 /* UIColor+Random.m */; };
 		5310EE33170A3276007B8568 /* JCButtonFunUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310EE32170A3275007B8568 /* JCButtonFunUtilities.m */; };
 		5310EE36170A3A86007B8568 /* JCButtonGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310EE35170A3A85007B8568 /* JCButtonGridView.m */; };
+		5310EE3C170A7A0D007B8568 /* iPhone_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5310EE3B170A7A0D007B8568 /* iPhone_icon@2x.png */; };
+		5310EE3E170A7A1C007B8568 /* iPad_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5310EE3D170A7A1C007B8568 /* iPad_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		5310EE32170A3275007B8568 /* JCButtonFunUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCButtonFunUtilities.m; sourceTree = "<group>"; };
 		5310EE34170A3A85007B8568 /* JCButtonGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCButtonGridView.h; sourceTree = "<group>"; };
 		5310EE35170A3A85007B8568 /* JCButtonGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCButtonGridView.m; sourceTree = "<group>"; };
+		5310EE3B170A7A0D007B8568 /* iPhone_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone_icon@2x.png"; path = "../iPhone_icon@2x.png"; sourceTree = "<group>"; };
+		5310EE3D170A7A1C007B8568 /* iPad_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad_icon@2x.png"; path = "../iPad_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		5310EE11170A2D27007B8568 /* Button Fun */ = {
 			isa = PBXGroup;
 			children = (
+				5310EE3F170A7AB6007B8568 /* Resources */,
 				5310EE12170A2D27007B8568 /* Supporting Files */,
 				5310EE28170A2E11007B8568 /* JCButtonViewController.h */,
 				5310EE29170A2E11007B8568 /* JCButtonViewController.m */,
@@ -122,6 +127,15 @@
 				5310EE21170A2D27007B8568 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5310EE3F170A7AB6007B8568 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5310EE3D170A7A1C007B8568 /* iPad_icon@2x.png */,
+				5310EE3B170A7A0D007B8568 /* iPhone_icon@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +194,8 @@
 				5310EE1E170A2D27007B8568 /* Default.png in Resources */,
 				5310EE20170A2D27007B8568 /* Default@2x.png in Resources */,
 				5310EE22170A2D27007B8568 /* Default-568h@2x.png in Resources */,
+				5310EE3C170A7A0D007B8568 /* iPhone_icon@2x.png in Resources */,
+				5310EE3E170A7A1C007B8568 /* iPad_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
