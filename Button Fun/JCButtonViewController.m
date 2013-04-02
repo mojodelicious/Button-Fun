@@ -44,6 +44,10 @@
     [self becomeFirstResponder];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [self resignFirstResponder];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
