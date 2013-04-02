@@ -15,7 +15,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
-    if (self) {
+    if (nil != self) {
         
         self.wantsFullScreenLayout = YES;
     }
