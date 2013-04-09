@@ -8,6 +8,15 @@
 
 #import "NSNumber+Random.h"
 
+#define RANDOM_MAX 0x100000000
+
 @implementation NSNumber (Random)
+
++ (NSNumber *)randomFloatBetweenZeroAndOne {
+    
+    float rand = (float)arc4random() / RANDOM_MAX;
+    
+    return [NSNumber numberWithFloat:rand];
+}
 
 @end

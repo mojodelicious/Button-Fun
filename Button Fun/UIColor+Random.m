@@ -7,15 +7,15 @@
 //
 
 #import "UIColor+Random.h"
-#import "JCButtonFunUtilities.h"
+#import "NSNumber+Random.h"
 
 @implementation UIColor (Random)
 
 + (UIColor *)randomColor {
     
-    CGFloat randRed = (CGFloat)[JCButtonFunUtilities randomFloatBetweenZeroAndOne];
-    CGFloat randGreen = (CGFloat)[JCButtonFunUtilities randomFloatBetweenZeroAndOne];
-    CGFloat randBlue = (CGFloat)[JCButtonFunUtilities randomFloatBetweenZeroAndOne];
+    CGFloat randRed = (CGFloat)[[NSNumber randomFloatBetweenZeroAndOne] floatValue];
+    CGFloat randGreen = (CGFloat)[[NSNumber randomFloatBetweenZeroAndOne] floatValue];
+    CGFloat randBlue = (CGFloat)[[NSNumber randomFloatBetweenZeroAndOne] floatValue];
     CGFloat alpha = 1.0f;
     
     return [UIColor colorWithRed:randRed green:randGreen blue:randBlue alpha:alpha];

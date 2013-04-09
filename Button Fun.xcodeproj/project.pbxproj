@@ -19,10 +19,10 @@
 		5310EE2A170A2E11007B8568 /* JCButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310EE29170A2E11007B8568 /* JCButtonViewController.m */; };
 		5310EE2D170A2EE0007B8568 /* JCButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310EE2C170A2EE0007B8568 /* JCButtonView.m */; };
 		5310EE30170A3086007B8568 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310EE2F170A3086007B8568 /* UIColor+Random.m */; };
-		5310EE33170A3276007B8568 /* JCButtonFunUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310EE32170A3275007B8568 /* JCButtonFunUtilities.m */; };
 		5310EE36170A3A86007B8568 /* JCButtonGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5310EE35170A3A85007B8568 /* JCButtonGridView.m */; };
 		5310EE3C170A7A0D007B8568 /* iPhone_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5310EE3B170A7A0D007B8568 /* iPhone_icon@2x.png */; };
 		5310EE3E170A7A1C007B8568 /* iPad_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5310EE3D170A7A1C007B8568 /* iPad_icon@2x.png */; };
+		53E98D7A17145558009A649B /* NSNumber+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E98D7917145558009A649B /* NSNumber+Random.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,12 +45,12 @@
 		5310EE2C170A2EE0007B8568 /* JCButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCButtonView.m; sourceTree = "<group>"; };
 		5310EE2E170A3086007B8568 /* UIColor+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Random.h"; sourceTree = "<group>"; };
 		5310EE2F170A3086007B8568 /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
-		5310EE31170A3275007B8568 /* JCButtonFunUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCButtonFunUtilities.h; sourceTree = "<group>"; };
-		5310EE32170A3275007B8568 /* JCButtonFunUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCButtonFunUtilities.m; sourceTree = "<group>"; };
 		5310EE34170A3A85007B8568 /* JCButtonGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCButtonGridView.h; sourceTree = "<group>"; };
 		5310EE35170A3A85007B8568 /* JCButtonGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCButtonGridView.m; sourceTree = "<group>"; };
 		5310EE3B170A7A0D007B8568 /* iPhone_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone_icon@2x.png"; path = "../iPhone_icon@2x.png"; sourceTree = "<group>"; };
 		5310EE3D170A7A1C007B8568 /* iPad_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad_icon@2x.png"; path = "../iPad_icon@2x.png"; sourceTree = "<group>"; };
+		53E98D7817145558009A649B /* NSNumber+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Random.h"; sourceTree = "<group>"; };
+		53E98D7917145558009A649B /* NSNumber+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Random.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +105,12 @@
 				5310EE2C170A2EE0007B8568 /* JCButtonView.m */,
 				5310EE2E170A3086007B8568 /* UIColor+Random.h */,
 				5310EE2F170A3086007B8568 /* UIColor+Random.m */,
-				5310EE31170A3275007B8568 /* JCButtonFunUtilities.h */,
-				5310EE32170A3275007B8568 /* JCButtonFunUtilities.m */,
 				5310EE1A170A2D27007B8568 /* JCAppDelegate.h */,
 				5310EE1B170A2D27007B8568 /* JCAppDelegate.m */,
 				5310EE34170A3A85007B8568 /* JCButtonGridView.h */,
 				5310EE35170A3A85007B8568 /* JCButtonGridView.m */,
+				53E98D7817145558009A649B /* NSNumber+Random.h */,
+				53E98D7917145558009A649B /* NSNumber+Random.m */,
 			);
 			path = "Button Fun";
 			sourceTree = "<group>";
@@ -211,8 +211,8 @@
 				5310EE2A170A2E11007B8568 /* JCButtonViewController.m in Sources */,
 				5310EE2D170A2EE0007B8568 /* JCButtonView.m in Sources */,
 				5310EE30170A3086007B8568 /* UIColor+Random.m in Sources */,
-				5310EE33170A3276007B8568 /* JCButtonFunUtilities.m in Sources */,
 				5310EE36170A3A86007B8568 /* JCButtonGridView.m in Sources */,
+				53E98D7A17145558009A649B /* NSNumber+Random.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +327,7 @@
 				5310EE27170A2D27007B8568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
